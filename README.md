@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# React Native Marketplace Screen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, high-performance product marketplace catalog component built with **React Native** and **JavaScript/JSX**. It features dynamic data integration via custom hooks, modal product detail views, custom variant selections, and built-in fallback data with real product specifications.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* **Grid Layout:** 2-column list layout optimized using React Native's `FlatList`.
+* **Dynamic Hook Integration:** Seamlessly fetches data using `useMarketplace()` with built-in loading and error fallback UI states.
+* **Rich Default Catalog:** Includes fallback data (`MARKETPLACE_PRODUCTS`) complete with high-resolution imagery, spec sheets, color options, and storage configurations.
+* **Modal Product Detail View:** Interactive product selection and modal popups using `ProductDetailsModal`.
+* **Safeguarded Checkout Flows:** Graceful error handling in variant/plan selection callbacks to prevent standard UI crashes on empty selections.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Installation & Setup
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure your host app has the required directory dependencies and theme configurations:
 
-### `npm run build`
+* **React Native** (`0.68+` or **Expo**)
+* Theme modules at `../../../theme/` (`colors`, `typography`, `spacing`)
+* Utilities at `../../../utils/currencyFormatter`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Module Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Place the file inside your screen directory (e.g., `src/screens/MarketplaceScreen.jsx`):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+src/
+├── components/
+│   ├── ProductCard.jsx
+│   └── ProductDetailsModal.jsx
+├── hooks/
+│   └── useMarketplace.js
+├── screens/
+│   └── MarketplaceScreen.jsx
+└── utils/
+    └── currencyFormatter.js
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1356" height="655" alt="Screenshot 2026-09-08 014435" src="https://github.com/user-attachments/assets/3cf4adec-4b96-40a8-ae4d-2cce221206dc" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="1345" height="649" alt="Screenshot 2026-09-08 014522" src="https://github.com/user-attachments/assets/6bd8fe02-3def-41d2-bef5-
+d269477537a3" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="1335" height="622" alt="Screenshot 2026-09-08 014548" src="https://github.com/user-attachments/assets/4f4eb319-1949-410b-8013-e47328cb6a20" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<img width="720" height="542" alt="Screenshot 2026-09-08 014649" src="https://github.com/user-attachments/assets/166f7e90-7168-4035-8e19-c1186d574632" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
